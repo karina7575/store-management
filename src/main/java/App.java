@@ -1,6 +1,10 @@
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,6 +12,7 @@ public class App {
     public static void main(String[] args) throws IOException {
         OkHttpClient client = new OkHttpClient();
         createListInfo(client);
+        changeShopStatus(client);
     }
 
     public static String checkSeven(OkHttpClient client) throws IOException {
@@ -27,5 +32,19 @@ public class App {
         infoList.add(checkSeven(client));
         infoList.add(checkNine(client));
         return infoList;
+    }
+
+    public static void changeShopStatus(OkHttpClient client) throws IOException {
+        byte[] bytes = "{\"name\": \"хлеб\", \"new_price\": \"400\"}".getBytes(StandardCharsets.UTF_8);
+        Request request = new Request.Builder()
+                .patch(RequestBody.create(bytes))
+                .url("http://localhost:8081/shop/good")
+                .addHeader("Content-Type", "application/json")
+                .build();
+        Response response = client.newCall(request).execute();
+        if(response.isSuccessful()){
+            System.out.println("изменили цену хлеба");
+        }
+
     }
 }
