@@ -1,0 +1,12 @@
+app:
+  integration:
+    shops:
+      - shop:
+          url: http://localhost:8081
+          name: Семерочка
+      - shop:
+          url: http://localhost:8082
+          name: Девяточка
+    action-link-postfix:
+      get-status: /application/status
+      update-price: /shop/good
