@@ -1,4 +1,4 @@
-package dto;
+package com.javaacademy.shop_admin.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;

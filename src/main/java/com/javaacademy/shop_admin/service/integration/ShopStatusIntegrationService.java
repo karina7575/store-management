@@ -1,11 +1,16 @@
-package service.integration;
+package com.javaacademy.shop_admin.service.integration;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import dto.ShopStatusIntegrationDto;
+import com.javaacademy.shop_admin.dto.NewShopPriceDto;
+import com.javaacademy.shop_admin.dto.ShopStatusIntegrationDto;
+import com.javaacademy.shop_admin.exception.IntegrationException;
 import lombok.Cleanup;
 import lombok.RequiredArgsConstructor;
+import lombok.SneakyThrows;
+import okhttp3.Headers;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
+import okhttp3.RequestBody;
 import okhttp3.Response;
 import org.springframework.stereotype.Service;
 

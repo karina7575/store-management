@@ -1,4 +1,4 @@
-package exception;
+package com.javaacademy.shop_admin.exception;
 
 import lombok.experimental.StandardException;
 

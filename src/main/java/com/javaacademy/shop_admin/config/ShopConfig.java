@@ -1,4 +1,4 @@
-package config;
+package com.javaacademy.shop_admin.config;
 
 import okhttp3.OkHttpClient;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

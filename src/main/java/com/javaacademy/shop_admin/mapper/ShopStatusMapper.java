@@ -1,7 +1,7 @@
-package mapper;
+package com.javaacademy.shop_admin.mapper;
 
-import dto.ShopStatusDto;
-import dto.ShopStatusIntegrationDto;
+import com.javaacademy.shop_admin.dto.ShopStatusDto;
+import com.javaacademy.shop_admin.dto.ShopStatusIntegrationDto;
 import org.springframework.stereotype.Service;
 
 @Service

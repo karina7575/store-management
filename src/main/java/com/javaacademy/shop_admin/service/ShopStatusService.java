@@ -1,14 +1,14 @@
-package service;
+package com.javaacademy.shop_admin.service;
 
-import config.ShopConfigProperties;
-import dto.ShopStatusDto;
-import dto.ShopStatusIntegrationDto;
+import com.javaacademy.shop_admin.config.ShopConfigProperties;
+import com.javaacademy.shop_admin.dto.ShopStatusDto;
+import com.javaacademy.shop_admin.dto.ShopStatusIntegrationDto;
+import com.javaacademy.shop_admin.mapper.ShopStatusMapper;
+import com.javaacademy.shop_admin.service.integration.ShopStatusIntegrationService;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
-import mapper.ShopStatusMapper;
 import org.springframework.stereotype.Service;
-import service.integration.ShopStatusIntegrationService;
 
 import java.util.List;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package config;
+package com.javaacademy.shop_admin.config;
 
 import lombok.Getter;
 import lombok.Setter;

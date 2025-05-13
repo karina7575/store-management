@@ -1,8 +1,9 @@
-package service.integration;
+package com.javaacademy.shop_admin.service.integration;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import dto.NewShopPriceDto;
-import exception.IntegrationException;
+import com.javaacademy.shop_admin.dto.NewShopPriceDto;
+import com.javaacademy.shop_admin.dto.ShopStatusIntegrationDto;
+import com.javaacademy.shop_admin.exception.IntegrationException;
 import lombok.Cleanup;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
